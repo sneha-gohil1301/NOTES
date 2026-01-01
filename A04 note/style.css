@@ -1,0 +1,218 @@
+/* body {
+    background: #f2f3f7;
+    margin: 0;
+}
+
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    background: #fff;
+    border-right: 1px solid #dedede;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-links {
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.side-links li:hover {
+    color: blue;
+}
+
+.upgrade {
+    text-align: center;
+    background: rgb(176, 173, 173);
+    padding: 15px;
+    border-radius: 12px;
+
+}
+
+
+.folder-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.08);
+    transition: o.25;
+
+}
+
+.folder-card:hover {
+    transform: translateX(-5px);
+}
+
+.soft-blue {
+    background: #d7e9ff;
+}
+
+.soft-pink {
+    background: #ffd8d8;
+}
+
+.soft-yellow {
+    background: rgb(225, 225, 61);
+
+}
+
+.add-folder {
+    text-align: center;
+    border: 2px dashed #bbb;
+}
+
+.note-card {
+    border-radius: 15px;
+    padding: 20px;
+    min-height: 170px;
+    color: #222;
+    background: #fff;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.08);
+    position: relative;
+
+
+}
+
+.note-card {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+
+}
+
+.note-actions i {
+    margin-left: 10ox;
+    cursor: pointer;
+    color: #555;
+
+}
+
+.note-actions i:hover {
+    color: #000;
+
+}
+
+.bg-yellow {
+    background: rgb(225, 225, 61);
+}
+.bg-red{
+    background: #ffd8d8;
+
+}
+.bg-blue{
+        background: #d7e9ff;
+} */
+
+
+
+body {
+    background: #f2f3f7;
+    margin: 0;
+}
+
+/* ---------- SIDEBAR ---------- */
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    background: #fff;
+    border-right: 1px solid #dedede;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-links {
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.side-links li:hover {
+    color: blue;
+}
+
+.upgrade {
+    text-align: center;
+    background: rgb(176, 173, 173);
+    padding: 15px;
+    border-radius: 12px;
+}
+
+/* ---------- FOLDER ---------- */
+.folder-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.08);
+    transition: 0.25s; /* ✅ CHANGED (o.25 → 0.25) */
+}
+
+.folder-card:hover {
+    transform: translateX(-5px);
+}
+
+.soft-blue {
+    background: #d7e9ff;
+}
+
+.soft-pink {
+    background: #ffd8d8;
+}
+
+.soft-yellow {
+    background: rgb(225, 225, 61);
+}
+
+.add-folder {
+    text-align: center;
+    border: 2px dashed #bbb;
+}
+
+/* ---------- NOTES ---------- */
+.note-card {
+    border-radius: 15px;
+    padding: 20px;
+    min-height: 170px;
+    color: #222;
+    background: #fff;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.08);
+    position: relative;     /* ✅ CHANGED */
+}
+
+/* ❌ THIS BLOCK REMOVED
+.note-card {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+*/
+
+/* ---------- NOTE ACTION ICONS ---------- */
+.note-action {               /* ✅ CHANGED (actions not card) */
+    position: absolute;      /* ✅ CHANGED */
+    top: 10px;
+    right: 15px;
+}
+
+.note-action i {             /* ✅ CHANGED (note-actions → note-action) */
+    margin-left: 10px;       /* ✅ CHANGED (10ox → 10px) */
+    cursor: pointer;
+    color: #555;
+}
+
+.note-action i:hover {
+    color: #000;
+}
+
+/* ---------- COLORS ---------- */
+.bg-yellow {
+    background: rgb(225, 225, 61);
+}
+
+.bg-red {
+    background: #ffd8d8;
+}
+
+.bg-blue {
+    background: #d7e9ff;
+}
